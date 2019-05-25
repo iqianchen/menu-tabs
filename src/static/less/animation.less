@@ -1,0 +1,146 @@
+[class*=animation-] {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both
+}
+/* 淡入 */
+.animation-fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+    animation-timing-function: linear
+}
+/* 放大 */
+.animation-scale-up {
+    animation-name: scale-up 
+}
+/* 缩小 */
+.animation-scale-down {
+    animation-name: scale-down
+}
+/* 从上滑入 */
+.animation-slide-top {
+    animation-name: slide-top
+}
+/* 从下滑入 */
+.animation-slide-bottom {
+    animation-name: slide-bottom
+}
+/* 从左滑入 */
+.animation-slide-left {
+    animation-name: slide-left
+}
+/* 从右滑入 */
+.animation-slide-right {
+    animation-name: slide-right
+}
+/* 震动 */
+.animation-snake {
+    animation-name: snake
+}
+/* 反向动画 */
+.animation-reverse {
+    animation-direction: reverse
+}
+
+/* ------------动画函数-------------- */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes scale-up {
+    0% {
+        opacity: 0;
+        transform: scale(0.2)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes scale-down {
+    0% {
+        opacity: 0;
+        transform: scale(1.8)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes slide-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes snake {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    10% {
+        transform: translateX(-9px)
+    }
+    20% {
+        transform: translateX(8px)
+    }
+    30% {
+        transform: translateX(-7px)
+    }
+    40% {
+        transform: translateX(6px)
+    }
+    50% {
+        transform: translateX(-5px)
+    }
+    60% {
+        transform: translateX(4px)
+    }
+    70% {
+        transform: translateX(-3px)
+    }
+    80% {
+        transform: translateX(2px)
+    }
+    90% {
+        transform: translateX(-1px)
+    }
+}
